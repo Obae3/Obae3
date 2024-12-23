@@ -5,6 +5,7 @@ The **Healthcare Networking Project** aims to establish a robust networking syst
 
 ## Table of Contents
 - [Overview](#overview)
+- [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Troubleshooting Module](#troubleshooting-module)
@@ -13,6 +14,9 @@ The **Healthcare Networking Project** aims to establish a robust networking syst
   - [Monitoring Module](#monitoring-module)
   - [Security Module](#security-module)
   - [Data Backup Module](#data-backup-module)
+  - [Alerting Module](#alerting-module)
+  - [Reporting Module](#reporting-module)
+  - [Load Balancing Module](#load-balancing-module)
 - [Modules](#modules)
   - [Troubleshooting Module](#troubleshooting-module)
   - [Communication Module](#communication-module)
@@ -20,9 +24,20 @@ The **Healthcare Networking Project** aims to establish a robust networking syst
   - [Monitoring Module](#monitoring-module)
   - [Security Module](#security-module)
   - [Data Backup Module](#data-backup-module)
+  - [Alerting Module](#alerting-module)
+  - [Reporting Module](#reporting-module)
+  - [Load Balancing Module](#load-balancing-module)
+- [Example Configurations](#example-configurations)
+- [FAQ](#faq)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#0111510752)
+- [Contact](#contact)
+
+## System Requirements
+- **Operating System**: Linux, macOS, Windows
+- **Python Version**: 3.7 or higher
+- **Additional Software**: SSH client, SQL database
 
 ## Installation
 1. **Clone this repository:**
@@ -75,6 +90,24 @@ The **Healthcare Networking Project** aims to establish a robust networking syst
     python data_backup.py <SOURCE_DIRECTORY> <BACKUP_DIRECTORY>
     ```
 
+### Alerting Module
+1. **Set up alerts for critical network events:**
+    ```bash
+    python setup_alerts.py
+    ```
+
+### Reporting Module
+1. **Generate reports on network performance and incidents:**
+    ```bash
+    python generate_reports.py
+    ```
+
+### Load Balancing Module
+1. **Distribute network traffic efficiently across servers:**
+    ```bash
+    python load_balancing.py
+    ```
+
 ## Modules
 ### Troubleshooting Module
 The troubleshooting module is designed to ensure network connectivity, device status, and system diagnostics, providing a seamless and stable network environment.
@@ -94,15 +127,19 @@ The security module performs comprehensive security checks and vulnerability ass
 ### Data Backup Module
 The data backup module facilitates regular backups of critical data, ensuring data integrity, availability, and disaster recovery capabilities.
 
-## Contributing
-We welcome contributions from the community! If you have ideas, suggestions, or improvements, please open an issue or submit a pull request.
+### Alerting Module
+The alerting module configures alerts for critical network events, ensuring timely responses to potential issues.
 
-## License
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+### Reporting Module
+The reporting module generates detailed reports on network performance, incidents, and overall health, aiding in informed decision-making.
 
-## Contact
-For questions, feedback, or further information, please reach out to [obaefidelis@gmail.com].
+### Load Balancing Module
+The load balancing module distributes network traffic efficiently across multiple servers, optimizing performance and preventing overloads.
 
----
+## Example Configurations
+### Troubleshooting Module Configuration
+```python
+# Configuration for troubleshooting module
+NETWORK_IP_RANGE = '192.168.1.0/24'
+DEVICE_STATUS_CHECK_INTERVAL = 60  # in seconds
 
-Thank you for your interest in the Healthcare Networking Project. Together, we can enhance the efficiency and reliability of healthcare networks.
